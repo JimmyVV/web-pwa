@@ -1,6 +1,6 @@
 {
   "name": "web-pwa",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "a simple repository for pwa, including caches,sw,notification",
   "main": "index.js",
   "scripts": {
