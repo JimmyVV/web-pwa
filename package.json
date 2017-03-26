@@ -1,10 +1,13 @@
 {
   "name": "web-pwa",
   "version": "0.1.0",
-  "description": "a simple repository for service worker and notification",
+  "description": "a simple repository for pwa, including caches,sw,notification",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "jimmyVV":"https://github.com/JimmyVV/web-pwa"
   },
   "author": "JimmyVV",
   "license": "ISC",
