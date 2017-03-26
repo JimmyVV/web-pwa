@@ -1,0 +1,14 @@
+{
+  "name": "web-pwa",
+  "version": "0.1.0",
+  "description": "a simple repository for service worker and notification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JimmyVV",
+  "license": "ISC",
+  "dependencies": {
+    "path-to-regexp": "^1.7.0"
+  }
+}
