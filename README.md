@@ -3,7 +3,7 @@
 
 > 该库是应对当前 Google 提出的 PWA 概念而写的。以链式 API 来完成 PWA 相关的操作。
 
-
+ [![npm][1]][2]  [![git][3]][4]
 
 ## 安装
 
@@ -64,7 +64,7 @@ import SW,{WebCaches,Notify} from 'web-pwa';
 
 ### SW
 
-SW 原意是 `Service Worker`。如果大家还不熟悉，推荐可以参考：[Service Worker 全面进阶][1]。
+SW 原意是 `Service Worker`。如果大家还不熟悉，推荐可以参考：[Service Worker 全面进阶][5]。
 
 #### 权限申请
 
@@ -115,7 +115,7 @@ self.addEventListener('message', function(event){
 });
 ```
 
-另外，SW 还可以通过 `clients` 挂载的 [postMessage][2] 向 client 发送信息。如果有这种需求，可以直接监听 `message` 事件。
+另外，SW 还可以通过 `clients` 挂载的 [postMessage][6] 向 client 发送信息。如果有这种需求，可以直接监听 `message` 事件。
 
 ```
 SW.onmessage(event=>{
@@ -126,7 +126,7 @@ SW.onmessage(event=>{
 
 #### 推送订阅
 
-当你想要使用 `Push` 相关的内容时，可以调用 `Notify.subscribe(route,key)` 方法。如果，你不是很理解 `Web Push` 的概念，可以参考: [Web Push 讲解][3]
+当你想要使用 `Push` 相关的内容时，可以调用 `Notify.subscribe(route,key)` 方法。如果，你不是很理解 `Web Push` 的概念，可以参考: [Web Push 讲解][7]
 
 ```
 // 下面的 key 根据自己生成进行替换
@@ -250,7 +250,7 @@ WebCaches.table('A').delete()
 row 本身也是一个函数:
 
  - row(request)
-    - @param request[Request||String]: 该参数可以为 request，或者 pathname（注意不能带上 `origin`）。当为 request 时，是直接匹配对应的行记录，而为 `pathname` 时，则是使用 [path-to-regexp][4] 的格式，可以匹配多个或者模糊匹配。
+    - @param request[Request||String]: 该参数可以为 request，或者 pathname（注意不能带上 `origin`）。当为 request 时，是直接匹配对应的行记录，而为 `pathname` 时，则是使用 [path-to-regexp][8] 的格式，可以匹配多个或者模糊匹配。
 
 
 ```
@@ -405,13 +405,17 @@ MIT
 
 ## Author
 
- - author: [villainhr][5]
+ - author: [villainhr][9]
  - email: villainthr@gmail.com
     
 
 
-  [1]: https://www.villainhr.com/page/2017/01/08/Service%20Worker%20%E5%85%A8%E9%9D%A2%E8%BF%9B%E9%98%B6
-  [2]: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
-  [3]: https://www.villainhr.com/page/2017/01/08/Web%20%E6%8E%A8%E9%80%81%E6%8A%80%E6%9C%AF#Push
-  [4]: https://github.com/pillarjs/path-to-regexp
-  [5]: https://www.villainhr.com/
+  [1]: https://img.shields.io/badge/npm-web--pwa-blue.svg
+  [2]: https://www.npmjs.com/package/web-pwa
+  [3]: https://img.shields.io/badge/git-web--pwa-blue.svg
+  [4]: https://github.com/JimmyVV/web-pwa
+  [5]: https://www.villainhr.com/page/2017/01/08/Service%20Worker%20%E5%85%A8%E9%9D%A2%E8%BF%9B%E9%98%B6
+  [6]: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
+  [7]: https://www.villainhr.com/page/2017/01/08/Web%20%E6%8E%A8%E9%80%81%E6%8A%80%E6%9C%AF#Push
+  [8]: https://github.com/pillarjs/path-to-regexp
+  [9]: https://www.villainhr.com/
